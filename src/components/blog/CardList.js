@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Cards from './Cards';
-import Container from 'react-bootstrap'
+
 
 class CardList extends React.Component {
 
@@ -11,7 +11,7 @@ class CardList extends React.Component {
         })
     }
    render(){
-       return <Container className="card-deck">{this.makeCardList(this.props.data)}</Container>;
+       return <div className="card-deck">{this.makeCardList(this.props.data)}</div>;
    }
 
 }
