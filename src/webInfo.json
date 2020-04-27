@@ -1,0 +1,113 @@
+{
+    "userName" : "Satyam Rastogi",
+    "about" :[
+        "Hello, my name is Satyam Rastogi. I'm a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React.",
+        "tMy dream is to one day start my own business and become an entrepreneur (currently working on some ideas).",
+        "I'm constantly learning new things. currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS"
+    ],
+    "imageURL" : "adfa",
+    "working_position" : "Full Stack Software Developer",
+    "blogs" :{
+        "items" :[
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "blog_image" : "image path",
+            "intro":"this is demo line ",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        },
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "intro":"this is demo line ",
+            "blog_image" : "image path",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        },
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "intro":"this is demo line ",
+            "blog_image" : "image path",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        },
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "intro":"this is demo line ",
+            "blog_image" : "image path",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        },
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "intro":"this is demo line ",
+            "blog_image" : "image path",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        },
+        {
+            "blog_id" : 1,
+            "blog_name" : "heading of a blog",
+            "intro":"this is demo line ",
+            "blog_image" : "image path",
+            "blog_about " : [
+                "line by line",
+                "or full one"
+            ],
+            "category" : "blog category"
+        }
+    ]
+},
+    "website_title" :"Satyam Rastogi",
+    "tab":[
+        { "title": "Home", "path": "/" ,"icon_name" :"Home"},
+        { "title": "Blog", "path": "/blog","icon_name" :"Book" },
+        { "title": "About", "path": "/about","icon_name" :"Info" },
+        { "title": "Contact Me", "path": "/contact" ,"icon_name" :"Mail"}
+    ],
+    "follow_us":[
+        {
+            "title" :"Facebook",
+            "path" : "facebookPathPage",
+            "image" :"imageUrl"
+            ,"icon_name" :"Facebook"
+        },
+        {
+            "title" : "Twitter",
+            "path" :"to twitter",
+            "image" :"iamge"
+            ,"icon_name" :"Twitter"
+        },
+        {
+            "title" : "LinkedIn",
+            "path" :"to twitter",
+            "image" :"iamge"
+            ,"icon_name" :"LinkedIn"
+        },
+        {
+            "title" : "GitHub",
+            "path" :"https://github.com/satyamrastogi",
+            "image" :"iamge"
+            ,"icon_name" :"GitHub"
+        }
+    ]
+}
