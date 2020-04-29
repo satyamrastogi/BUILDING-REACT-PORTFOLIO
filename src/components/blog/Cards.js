@@ -8,44 +8,41 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    margin :"1.5rem",
-    padding :"0.5rem"
+
+class Cards extends React.Component {  
+  
+    render(){
+    return (
+        <Card style={{maxWidth:400,margin:"1rem"}}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt={this.props.item.title}
+              height="280rem"
+              image={require('../../assets/images/devgrub.png')}
+              title={this.props.item.intro}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {this.props.item.title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {this.props.item.intro}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="small" color="primary">
+              Share
+            </Button>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </CardActions>
+        </Card>
+      );
   }
-});
-
-export default function Cards(props) {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.root }>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt={props.item.blog_name}
-          height="140"
-          image={require('../../assets/images/evverest.png')}
-          title={props.item.blog_name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.item.blog_name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.item.intro}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-  );
+  
 }
+
+export default Cards;

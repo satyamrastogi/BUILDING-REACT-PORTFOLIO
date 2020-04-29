@@ -10,66 +10,66 @@
     "blogs" :{
         "items" :[
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
-            "blog_image" : "image path",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],
             "category" : "blog category"
         },
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_image" : "image path",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],
             "category" : "blog category"
         },
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_image" : "image path",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],
             "category" : "blog category"
         },
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_image" : "image path",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],
             "category" : "blog category"
         },
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_image" : "image path",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],
             "category" : "blog category"
         },
         {
-            "blog_id" : 1,
-            "blog_name" : "heading of a blog",
+            "id" : 1,
+            "title" : "heading of a blog",
+            "image" : "image path",
             "intro":"this is demo line ",
-            "blog_image" : "image path",
-            "blog_about " : [
+            "content" : [
                 "line by line",
                 "or full one"
             ],

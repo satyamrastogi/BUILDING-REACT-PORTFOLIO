@@ -1,7 +1,10 @@
 import React from 'react';
 
 import Cards from './Cards';
+<<<<<<< Updated upstream
 import Container from 'react-bootstrap'
+=======
+>>>>>>> Stashed changes
 
 class CardList extends React.Component {
 
@@ -11,7 +14,9 @@ class CardList extends React.Component {
         })
     }
    render(){
-       return <Container className="card-deck">{this.makeCardList(this.props.data)}</Container>;
+       return <div className="card-deck justify-content-md-center" style={{backgroundColor:"black",marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem",maxWidth:900}}>
+       {this.makeCardList(this.props.data)}
+       </div>;
    }
 
 }
