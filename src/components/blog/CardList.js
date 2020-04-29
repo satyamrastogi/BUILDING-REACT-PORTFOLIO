@@ -1,10 +1,7 @@
 import React from 'react';
 
 import Cards from './Cards';
-<<<<<<< Updated upstream
-import Container from 'react-bootstrap'
-=======
->>>>>>> Stashed changes
+
 
 class CardList extends React.Component {
 
