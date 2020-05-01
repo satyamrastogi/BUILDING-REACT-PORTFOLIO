@@ -2,10 +2,11 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import CardList from '../components/blog/CardList';
+import SubscriptionForm from '../components/ SubscriptionForm';
 
 
 class BlogPage extends React.Component {
-
+    
     componentDidMount() {
         window.scrollTo({
             top:0,
@@ -20,8 +21,8 @@ class BlogPage extends React.Component {
                     <div className="col-md-auto">
                         <CardList data={this.props.items}/>
                     </div>
-                    <div className="col justify-content-md-center" style={{backgroundColor:"blue",marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
-                        <p>this is other part</p>
+                    <div className="col justify-content-md-center" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
+                    <SubscriptionForm/>
                     </div>
                 </div>
             </div>
