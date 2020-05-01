@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import read_details from '../utils/read_details';
 
 class AboutPage extends React.Component  {
 
@@ -12,17 +10,20 @@ class AboutPage extends React.Component  {
             return <p>{item}</p>
         })
     }
+
     componentDidMount() {
-        ReactDOM.findDOMNode(this).scrollIntoView();
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
       }
-    
+
     render(){
-        let contentDetails = read_details();
         return(
             <div>
                 <Hero title={this.props.title} />
                 <Content>
-                    {this.makeContent(contentDetails.about)}
+                    {this.makeContent(this.props.about)}
                 </Content>
             </div>
         );

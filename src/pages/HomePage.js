@@ -14,7 +14,7 @@ class HomePage extends React.Component {
       
     render(){
         return(
-            <div>
+            <div className="p-1" style={{backgroundColor:"pink",marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
                 <Hero title={this.props.title} subTitle={this.props.subTitle} text={this.props.text} />
                 <Carousel />
             </div>
