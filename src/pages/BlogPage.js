@@ -15,7 +15,7 @@ class BlogPage extends React.Component {
       }
     render(){
         return(
-            <div className="p-1" style={{backgroundColor:"red",marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
+            <div className="p-1" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
                 <Hero title={this.props.title} />
                 <div className="row ">
                     <div className="col-md-auto">
