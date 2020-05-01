@@ -4,11 +4,32 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import InfoPopUpButton from '../InfoPopUpButton'
+import PopOverButton from '../PopOverButton';
 
-class Cards extends React.Component {  
+class Cards extends React.Component { 
+    
+    copyUrlToCLipBoard = () => {
+        var copyText = window.location.href;
+        const el = document.createElement('textarea');
+        el.value = copyText;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        console.log("print ");
+      };
+
+    constructor(props){
+        super(props);
+        this.state={
+            title : 'share',
+            text : 'Link is successfully copied to clipboard',
+            name : 'Share'
+        }
+    }
+    
   
     render(){
     return (
@@ -31,9 +52,7 @@ class Cards extends React.Component {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="dark">
-              Share
-            </Button>
+            <PopOverButton button={this.state} onTask={this.copyUrlToCLipBoard}/>
             <InfoPopUpButton title={this.props.item.title} content={this.props.item.intro}/>
           </CardActions>
         </Card>

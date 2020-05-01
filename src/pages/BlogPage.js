@@ -22,7 +22,8 @@ class BlogPage extends React.Component {
                         <CardList data={this.props.items}/>
                     </div>
                     <div className="col justify-content-md-center" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
-                    <SubscriptionForm/>
+                        <h4 className="display-5">News Letter</h4>
+                        <SubscriptionForm/>
                     </div>
                 </div>
             </div>
