@@ -36,15 +36,18 @@ app.post('/api/email', (req, res, next) => {
           pass: ''
         }
       });
-    if(req.body.message && req.body.message === ""){
-        req.body.message= "Thanks for subscripton we will send new upadates on this from now on"
-    }
+   
     //todo write the email in file and send them mail when you upload the content
+    let message = req.body.message;
+    console.log(typeof message);
+    if(message === undefined || message === ''){
+        message = 'You have successfully subscribed to the new blogs'
+    }
     const msg = {
         to: req.body.email,
         from: 'dslayer192@gmail.com',
         subject: 'Website Contact',
-        text: req.body.message
+        text: message
     }
     console.log({msg});
     transporter.sendMail(msg, function(error, info){
@@ -54,7 +57,6 @@ app.post('/api/email', (req, res, next) => {
                 success: false
             });
         } else {
-            console.log("info :"+{info});
             res.status(200).json({
                 success: true
             });
