@@ -10,7 +10,6 @@ import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 export default function PopOverButton(props) {
     const clickHandler = () => {
         props.onTask();
-        console.log(props.onTask);
       };
   return (
     <PopupState variant="popover" popupId="share-button">

@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import InfoPopUpButton from '../InfoPopUpButton'
-import PopOverButton from '../PopOverButton'
+import SnackBarButton from '../SnackBarButton'
 
 class Cards extends React.Component {  
     
@@ -18,7 +18,6 @@ class Cards extends React.Component {
         el.select();
         document.execCommand('copy');
         document.body.removeChild(el);
-        console.log("print ");
       };
 
     constructor(props){
@@ -26,7 +25,8 @@ class Cards extends React.Component {
         this.state={
             title : 'share',
             text : 'Link is successfully copied to clipboard',
-            name : 'Share'
+            name : 'Share',
+            color : 'dark'
         }
     }
 
@@ -51,7 +51,7 @@ class Cards extends React.Component {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <PopOverButton button={this.state} onTask={this.copyUrlToCLipBoard}/>
+            <SnackBarButton button={this.state} onTask={this.copyUrlToCLipBoard}/>
             <InfoPopUpButton title={this.props.item.title} content={this.props.item.intro}/>
           </CardActions>
         </Card>
