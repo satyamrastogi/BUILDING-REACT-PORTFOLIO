@@ -18,7 +18,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "Science"
         },
         {
             "id" : 1,
@@ -29,7 +29,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "Science"
         },
         {
             "id" : 1,
@@ -40,7 +40,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "maths"
         },
         {
             "id" : 1,
@@ -51,7 +51,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "maths"
         },
         {
             "id" : 1,
@@ -62,7 +62,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "Random"
         },
         {
             "id" : 1,
@@ -73,7 +73,7 @@
                 "line by line",
                 "or full one"
             ],
-            "category" : "blog category"
+            "category" : "Random"
         }
     ]
 },
