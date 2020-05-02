@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import SubscriptionForm from '../components/ SubscriptionForm'
+import ContactForm from '../components/contact/ContactForm'
 
 class ContactPage extends React.Component {
 
@@ -19,7 +19,7 @@ class ContactPage extends React.Component {
                 <Hero title={this.props.title} />
 
                 <Content>
-                    <SubscriptionForm/>
+                    <ContactForm/>
                 </Content>
             </div>
         );

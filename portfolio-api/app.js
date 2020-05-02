@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const sendGrid = require('@sendGrid/mail');
+var nodemailer = require('nodemailer');
 
 
 const app = express();
@@ -20,39 +20,47 @@ app.use((req, res, next) => {
 });
 
 
+
 app.get('/api', (req, res, next) => {
     res.send('API Status: I\'m awesome')
 });
 
 
+
 app.post('/api/email', (req, res, next) => {
 
-    console.log(req.body);
-
-    sendGrid.setApiKey('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');
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'dslayer192@gmail.com',
+          pass: ''
+        }
+      });
+    if(req.body.message && req.body.message === ""){
+        req.body.message= "Thanks for subscripton we will send new upadates on this from now on"
+    }
+    //todo write the email in file and send them mail when you upload the content
     const msg = {
-        to: '',
-        from: req.body.email,
+        to: req.body.email,
+        from: 'dslayer192@gmail.com',
         subject: 'Website Contact',
         text: req.body.message
     }
-
-    sendGrid.send(msg)
-        .then(result => {
-
-            res.status(200).json({
-                success: true
-            });
-
-        })
-        .catch(err => {
-
-            console.log('error: ', err);
+    console.log({msg});
+    transporter.sendMail(msg, function(error, info){
+        if (error) {
+            console.log('error: ', error);
             res.status(401).json({
                 success: false
             });
+        } else {
+            console.log("info :"+{info});
+            res.status(200).json({
+                success: true
+            });
+        }
+      });
 
-        });
 });
 
 

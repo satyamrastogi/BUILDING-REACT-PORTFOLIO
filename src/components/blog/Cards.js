@@ -6,9 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import InfoPopUpButton from '../InfoPopUpButton'
-import PopOverButton from '../PopOverButton';
+import PopOverButton from '../PopOverButton'
 
-class Cards extends React.Component { 
+class Cards extends React.Component {  
     
     copyUrlToCLipBoard = () => {
         var copyText = window.location.href;
@@ -29,8 +29,7 @@ class Cards extends React.Component {
             name : 'Share'
         }
     }
-    
-  
+
     render(){
     return (
         <Card style={{maxWidth:400,margin:"1rem"}}>
