@@ -41,7 +41,7 @@
     ]
   },
   "proxy": "http://localhost:3030",
-  "homepage": "http://satyamrastogi.github.io/building-react-portfolio",
+  "homepage": "http://satyamrastogi.github.io/BUILDING-REACT-PORTFOLIO/",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
