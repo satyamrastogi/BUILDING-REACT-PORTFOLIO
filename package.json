@@ -41,7 +41,7 @@
     ]
   },
   "proxy": "http://localhost:3030",
-  "homepage": "http://satyamrastogi.github.io/home",
+  "homepage": "http://satyamrastogi.github.io/profile",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
