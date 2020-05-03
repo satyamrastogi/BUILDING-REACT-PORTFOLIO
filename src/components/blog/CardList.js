@@ -7,7 +7,7 @@ class CardList extends React.Component {
 
     makeCardList = (items) => {
         return items.map(item => {
-            return <Cards item={item}></Cards>
+            return <Cards key={item.id} item={item}></Cards>
         })
     }
    render(){

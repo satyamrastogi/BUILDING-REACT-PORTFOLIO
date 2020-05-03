@@ -42,7 +42,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-1" fluid={true}>
           <Navbar sticky="top" className="border-bottom" bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand><Link style={{color:"#FFFFFF",marginLeft:"5%"}}className="nav-link" to="/">{this.state.title}</Link></Navbar.Brand>
+          <Navbar.Brand><Link style={{color:"#FFFFFF",marginLeft:"5%"}}className="nav-link" to="/home">{this.state.title}</Link></Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto" style={{marginRight:"5%"}}>

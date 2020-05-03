@@ -54,7 +54,7 @@ class BlogPage extends React.Component {
                     </div>
                     <div className="col justify-content-md-center" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
                         <div className="card" style={{padding:"1rem"}}>
-                        <h4 className="display-5" style={{marginBottom:"1rem",fontSize:"1vw"}}>News Letter</h4>
+                        <h4 className="display-5" style={{marginBottom:"1rem"}}>News Letter</h4>
                         <SubscriptionForm/>
                         </div>
                         <div className="card" style={{padding:"1rem",fontSize:"1vw",marginTop:"12rem" }}>
