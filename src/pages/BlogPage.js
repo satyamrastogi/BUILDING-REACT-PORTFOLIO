@@ -53,10 +53,14 @@ class BlogPage extends React.Component {
                         <CardList data={this.state.cardsList}/>
                     </div>
                     <div className="col justify-content-md-center" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
-                        <h4 className="display-5">News Letter</h4>
+                        <div className="card" style={{padding:"1rem"}}>
+                        <h4 className="display-5" style={{marginBottom:"1rem",fontSize:"1vw"}}>News Letter</h4>
                         <SubscriptionForm/>
-                        <h4 className="display-5" style={{marginTop:"12rem"}}>Topics</h4>
+                        </div>
+                        <div className="card" style={{padding:"1rem",fontSize:"1vw",marginTop:"12rem" }}>
+                        <h4 className="display-5" style={{marginBottom:"1rem"}}>Topics</h4>
                         <FilterTopic name={this.getFilterTopic()} onTask={(value)=>this.filterChangeHandler(value)}/>
+                        </div>
                     </div>
                 </div>
             </div>
