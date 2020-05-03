@@ -79,7 +79,7 @@
 },
     "website_title" :"Satyam Rastogi",
     "tab":[
-        { "title": "Home", "path": "/" ,"icon_name" :"Home"},
+        { "title": "Home", "path": "/home" ,"icon_name" :"Home"},
         { "title": "Blog", "path": "/blog","icon_name" :"Book" },
         { "title": "About", "path": "/about","icon_name" :"Info" },
         { "title": "Contact Me", "path": "/contact" ,"icon_name" :"Mail"}
