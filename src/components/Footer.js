@@ -18,7 +18,7 @@ class Footer extends React.Component{
               <div fluid="true" className="text-md-left">
                 <div className="row">
                   <div className="col-sm" style={{ marginRight:"3%"}}>
-                    <h5 className="title">Footer Content</h5>
+                    <h5 className="title">Welcome</h5>
                     <p>
                       {userDetail.footer_content}
                     </p>
