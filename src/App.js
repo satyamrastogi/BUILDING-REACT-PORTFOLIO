@@ -19,12 +19,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       title: 'Satyam Rastogi',
-      headerLinks: [
-        { title: 'Home', path: '/home' },
-        {title : 'Blog',path:'/blog'},
-        { title: 'About', path: '/about' },
-        { title: 'Contact', path: '/contact' }
-      ],
       home: {
         title: 'Be Relentless',
         subTitle: 'Projects the make a difference',

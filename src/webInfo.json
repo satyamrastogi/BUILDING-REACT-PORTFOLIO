@@ -1,78 +1,59 @@
 {
     "userName" : "Satyam Rastogi",
     "about" :[
-        "Hello, my name is Satyam Rastogi. I'm a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React.",
-        "tMy dream is to one day start my own business and become an entrepreneur (currently working on some ideas).",
+        "Hello, my name is Satyam Rastogi. I'm a full stack engineer with experience in Express JS, Node JS, Oracle SQL, MongoDB, and React.",
         "I'm constantly learning new things. currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS"
     ],
-    "imageURL" : "adfa",
-    "working_position" : "Full Stack Software Developer",
+    "footer_content" : "my name is Satyam Rastogi. I'm a full stack engineer with experience in Express JS, Node JS,",
+    "working_position" : "Associate Software Developer",
     "blogs" :{
         "items" :[
         {
             "id" : 1,
-            "title" : "heading of a blog",
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "Science"
         },
         {
-            "id" : 1,
-            "title" : "heading of a blog",
+            "id" : 2,
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "Science"
         },
         {
-            "id" : 1,
-            "title" : "heading of a blog",
+            "id" : 3,
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "maths"
         },
         {
-            "id" : 1,
-            "title" : "heading of a blog",
+            "id" : 4,
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "maths"
         },
         {
-            "id" : 1,
-            "title" : "heading of a blog",
+            "id" : 5,
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "Random"
         },
         {
-            "id" : 1,
-            "title" : "heading of a blog",
+            "id" : 6,
+            "title" : "orem Ipsum",
             "image" : "image path",
             "intro":"this is demo line ",
-            "content" : [
-                "line by line",
-                "or full one"
-            ],
+            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "Random"
         }
     ]
@@ -87,19 +68,19 @@
     "follow_us":[
         {
             "title" :"Facebook",
-            "path" : "facebookPathPage",
+            "path" : "https://www.facebook.com/Assasin.0007",
             "image" :"imageUrl"
             ,"icon_name" :"Facebook"
         },
         {
             "title" : "Twitter",
-            "path" :"to twitter",
+            "path" :"https://twitter.com/satyamR72944515",
             "image" :"iamge"
             ,"icon_name" :"Twitter"
         },
         {
             "title" : "LinkedIn",
-            "path" :"to twitter",
+            "path" :"https://www.linkedin.com/in/satyamrastogi/",
             "image" :"iamge"
             ,"icon_name" :"LinkedIn"
         },

@@ -52,7 +52,7 @@ class Cards extends React.Component {
           </CardActionArea>
           <CardActions>
             <SnackBarButton button={this.state} onTask={this.copyUrlToCLipBoard}/>
-            <InfoPopUpButton title={this.props.item.title} content={this.props.item.intro}/>
+            <InfoPopUpButton title={this.props.item.title} content={this.props.item.content}/>
           </CardActions>
         </Card>
       );
