@@ -11,7 +11,7 @@ class CardList extends React.Component {
         })
     }
    render(){
-       return <div className="card-deck justify-content-md-center" style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem",maxWidth:900}}>
+       return <div className="card-deck justify-content-md-center" style={{margin:"1rem"}}>
        {this.makeCardList(this.props.data)}
        </div>;
    }

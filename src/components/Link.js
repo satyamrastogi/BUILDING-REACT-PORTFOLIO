@@ -14,7 +14,6 @@ export default class Link extends React.Component {
     isInternal(to) {
       
       // If it's a relative url such as '/path', 'path' and does not contain a protocol we can assume it is internal.
-      
       if(to.indexOf("://")=== -1) return true;
   
       const toLocation = this.parseTo(to);

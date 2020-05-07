@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Redirect ,Switch} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -28,10 +28,10 @@ class App extends React.Component {
         title: 'About Me'
       },
       contact: {
-        title: 'Let\'s Talk'
+        title: 'Contact  Me'
       },
       blog:{
-        title : 'Blog '
+        title : 'Projects '
       }
     }
   }
@@ -47,17 +47,19 @@ class App extends React.Component {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto" style={{marginRight:"5%"}}>
                 <Link className="nav-link" to="/home">Home</Link>
-                <Link className="nav-link" to="/blog">Blog</Link>
+                <Link className="nav-link" to="/project">Project</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Switch>
           <Route path="/home" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} about={userDetails.about}/>} />
           <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} />} />
-          <Route path="/blog" exact render={() => <BlogPage title={this.state.blog.title} items={userDetails.blogs.items}/>} />
+          <Route path="/project" exact render={() => <BlogPage title={this.state.blog.title} items={userDetails.blogs.items}/>} />
           <Route render={() => <Redirect to="/home"/>}/>
+          </Switch>
           <Footer userDetail={userDetails} />
 
         </Container>
