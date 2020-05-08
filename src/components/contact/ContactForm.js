@@ -54,6 +54,10 @@ class ContactForm extends React.Component{
             'application/x-www-form-urlencoded; charset=UTF-8');
         xhr.send(data);
         this.setState({
+            name: '',
+            email: '',
+            message: '',
+            phoneNumber:'',
             disabled:true,
             emailSent:true
         });
