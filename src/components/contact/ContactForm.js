@@ -19,19 +19,22 @@ const validateForm = (errors) => {
   );
   return valid;
 }
-
+const validateInput = (data) => {
+    let valid =true;
+    if(data.name === '' && data.email === '' && data.message === '' && data.phoneNumber === '')
+        valid= false;
+    return valid;
+}
 
 class ContactForm extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            fields:{
             name: '',
             email: '',
             message: '',
-            phoneNumber:''
-            },
-            disabled: false,
+            phoneNumber:'',
+            disabled: true,
             emailSent: null,
             errors: {
                 fullName: '',
@@ -75,31 +78,35 @@ class ContactForm extends React.Component{
         default:
             break;
         }
-
-        this.setState({errors, fields:{
-            [name]: value
-        }});
+        if(validateForm(errors)){
+            this.setState({
+                disabled:false
+            })
+        }else{
+            this.setState({
+                disabled:true
+            })
+        }
+        this.setState({errors, [name]: value});
     }
 
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if(!validateForm(this.state.errors) || validateForm(this.state.fields)) {
+        if(!validateForm(this.state.errors) || !validateInput(this.state)) {
             this.setState({
-                disabled : false,
+                disabled: true,
                 emailSent:false
             });
             return;
           }
-        this.setState({
-            disabled: true
-        });
         var url = new URL(GOOGLE_FORM_ACTION_URL);
-        url.searchParams.append(GOOGLE_FORM_MESSAGE_ID, this.state.fields.message);
-        url.searchParams.append(GOOGLE_FORM_EMAIL_ID, this.state.fields.email);
-        url.searchParams.append(GOOGLE_FORM_NAME, this.state.fields.name);
-        url.searchParams.append(GOOGLE_FORM_PHONE_NUMBER, this.state.fields.phoneNumber);
+        url.searchParams.append(GOOGLE_FORM_MESSAGE_ID, this.state.message);
+        url.searchParams.append(GOOGLE_FORM_EMAIL_ID, this.state.email);
+        url.searchParams.append(GOOGLE_FORM_NAME, this.state.name);
+        url.searchParams.append(GOOGLE_FORM_PHONE_NUMBER, this.state.phoneNumber);
         let data = url.search.slice(1);
+        console.log(data);
         var xhr = new XMLHttpRequest();
         xhr.open('POST', GOOGLE_FORM_ACTION_URL, true);
         xhr.setRequestHeader('Accept',
@@ -108,20 +115,18 @@ class ContactForm extends React.Component{
             'application/x-www-form-urlencoded; charset=UTF-8');
         xhr.send(data);
         this.setState({
-            fields:{
-                name: '',
+            name: '',
+            email: '',
+            message: '',
+            phoneNumber:'',
+            disabled:false,
+            emailSent:true,
+            errors: {
+                fullName: '',
                 email: '',
-                message: '',
-                phoneNumber:''
-                },
-                disabled: false,
-                emailSent: null,
-                errors: {
-                    fullName: '',
-                    email: '',
-                    phoneNumber: '',
-                    message:''
-                  }
+                phoneNumber: '',
+                message:''
+              }
         });
     }
 
@@ -130,36 +135,36 @@ class ContactForm extends React.Component{
         <Form onSubmit={this.handleSubmit}>
             <Form.Group>
                 <Form.Label htmlFor="full-name">Full Name</Form.Label>
-                <Form.Control  id="full-name" name="name" type="text" value={this.state.fields.name} onChange={this.handleChange} />
+                <Form.Control  id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
                 {this.state.errors.fullName.length > 1 && <p className="d-inline err-msg">{this.state.errors.fullName}</p>}
             </Form.Group>
             
 
             <Form.Group>
                 <Form.Label htmlFor="email">Email</Form.Label>
-                <Form.Control id="email" name="email" type="email" value={this.state.fields.email} onChange={this.handleChange} />
+                <Form.Control id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange} />
                 {this.state.errors.email.length > 1 && <p className="d-inline err-msg">{this.state.errors.email}</p>}
             </Form.Group>
             
 
             <Form.Group>
                 <Form.Label htmlFor="phoneNumber">Phone Number</Form.Label>
-                <Form.Control id="phoneNumber" name="phoneNumber" type="number" value={this.state.fields.phoneNumber} onChange={this.handleChange} />
+                <Form.Control id="phoneNumber" name="phoneNumber" type="number" value={this.state.phoneNumber} onChange={this.handleChange} />
                 {this.state.errors.phoneNumber.length > 1  && <p className="d-inline err-msg">{this.state.errors.phoneNumber}</p>}
             </Form.Group>
 
             <Form.Group>
                 <Form.Label htmlFor="message">Message</Form.Label>
-                <Form.Control id="message" name="message" as="textarea"rows="3" value={this.state.fields.message} onChange={this.handleChange} />
+                <Form.Control id="message" name="message" as="textarea"rows="3" value={this.state.message} onChange={this.handleChange} />
                 { this.state.errors.message.length > 1 && <p className="d-inline err-msg">{this.state.errors.message}</p>}
             </Form.Group>
             
 
-            <Button className="d-inline-block" variant="dark" type="submit" disabled={this.state.fields.disabled}>
+            <Button className="d-inline-block" variant="dark" type="submit" disabled={this.state.disabled}>
                 Submit
             </Button>
             {this.state.emailSent === true && <p className="d-inline success-msg">Details Saved</p>}
-            {this.state.emailSent === false && <p className="d-inline success-msg"> Nothing to submit</p>}
+            {this.state.emailSent === false && <p className="d-inline success-msg"> Nothing to Saved</p>}
         </Form>
         </>
     }
