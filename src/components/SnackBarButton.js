@@ -21,7 +21,9 @@ export default function SnackbarButton(props) {
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
-    props.onTask();
+    if(props.onTask){
+      props.onTask();
+    }
     setOpen(true);
   };
 
