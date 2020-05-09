@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import youtube from '../assets/images/youtube.JPG'
+import SkillList from '../components/about/SkillList';
 
 class AboutPage extends React.Component  {
 
@@ -55,136 +56,7 @@ class AboutPage extends React.Component  {
 						>
                         <h1 className="text-center">Skill Set</h1>
 						<div style={{marginTop:"7%"}}>
-                        <div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Java
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								HTML5
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-90-bar"
-								role="progressbar"
-								style={{ width: 90 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Javascript
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								PHP
-							</div>
-						</div>
-                        <div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Oracle database
-							</div>
-						</div>
-                        <div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								MY SQL
-							</div>
-						</div>
-                        <div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Mongo DB
-							</div>
-						</div>
-                        <div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Redis
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								ReactJS
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								NodeJs
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Spring-boot
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-80-bar"
-								role="progressbar"
-								style={{ width: 80 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								Android
-							</div>
-						</div>
-						<div className="progress mb-3">
-							<div
-								className="progress-bar fill-60-bar"
-								role="progressbar"
-								style={{ width: 60 + "%" }}
-								aria-valuemin="0"
-								aria-valuemax="100">
-								JQuery
-							</div>
-						</div>
+                        <SkillList data={this.props.skills} />
                         </div>
 					</div>
 				</div>
