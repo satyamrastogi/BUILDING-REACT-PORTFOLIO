@@ -44,7 +44,7 @@ class BlogPage extends React.Component {
       }
     render(){
         return(
-            <div style={{marginTop:"1rem",marginBottom:"1rem",marginLeft:"1rem",marginRight:"1rem"}}>
+            <div style={{margin:"1rem"}}>
                 <Hero title={this.props.title} />
                 <CardList data={this.state.cardsList}/>
             </div>

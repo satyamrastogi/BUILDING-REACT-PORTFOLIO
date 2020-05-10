@@ -73,6 +73,11 @@
             "id":12,
             "name":"JENKINS",
             "mastery":70
+        },
+        {
+            "id":13,
+            "name":"GIT",
+            "mastery" : 80
         }
     ],
     "blogs" :{
