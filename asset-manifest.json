@@ -1,28 +1,32 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.a1b7b015.chunk.css",
-    "main.js": "/profile/static/js/main.9b85cae6.chunk.js",
-    "main.js.map": "/profile/static/js/main.9b85cae6.chunk.js.map",
+    "main.js": "/profile/static/js/main.9d2f4996.chunk.js",
+    "main.js.map": "/profile/static/js/main.9d2f4996.chunk.js.map",
     "runtime-main.js": "/profile/static/js/runtime-main.d8f186ad.js",
     "runtime-main.js.map": "/profile/static/js/runtime-main.d8f186ad.js.map",
     "static/css/2.74189dbb.chunk.css": "/profile/static/css/2.74189dbb.chunk.css",
-    "static/js/2.49c6ede1.chunk.js": "/profile/static/js/2.49c6ede1.chunk.js",
-    "static/js/2.49c6ede1.chunk.js.map": "/profile/static/js/2.49c6ede1.chunk.js.map",
+    "static/js/2.14988d36.chunk.js": "/profile/static/js/2.14988d36.chunk.js",
+    "static/js/2.14988d36.chunk.js.map": "/profile/static/js/2.14988d36.chunk.js.map",
     "index.html": "/profile/index.html",
-    "precache-manifest.dbeea03f96f5aeb96cc8ac44c4bc8db8.js": "/profile/precache-manifest.dbeea03f96f5aeb96cc8ac44c4bc8db8.js",
+    "precache-manifest.367096966cc77a2464fe2bd54db3cc5e.js": "/profile/precache-manifest.367096966cc77a2464fe2bd54db3cc5e.js",
     "service-worker.js": "/profile/service-worker.js",
     "static/css/2.74189dbb.chunk.css.map": "/profile/static/css/2.74189dbb.chunk.css.map",
     "static/css/main.a1b7b015.chunk.css.map": "/profile/static/css/main.a1b7b015.chunk.css.map",
-    "static/js/2.49c6ede1.chunk.js.LICENSE.txt": "/profile/static/js/2.49c6ede1.chunk.js.LICENSE.txt",
+    "static/js/2.14988d36.chunk.js.LICENSE.txt": "/profile/static/js/2.14988d36.chunk.js.LICENSE.txt",
+    "static/media/captcha_identifier.gif": "/profile/static/media/captcha_identifier.1f0405ce.gif",
     "static/media/devgrub.png": "/profile/static/media/devgrub.bf79b675.png",
     "static/media/evverest.png": "/profile/static/media/evverest.3da49c68.png",
+    "static/media/profile.png": "/profile/static/media/profile.8db2c05a.png",
+    "static/media/tic-tac-toe.gif": "/profile/static/media/tic-tac-toe.b4164c6a.gif",
+    "static/media/todolist.png": "/profile/static/media/todolist.0bf5c727.png",
     "static/media/youtube.JPG": "/profile/static/media/youtube.664e7442.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.d8f186ad.js",
     "static/css/2.74189dbb.chunk.css",
-    "static/js/2.49c6ede1.chunk.js",
+    "static/js/2.14988d36.chunk.js",
     "static/css/main.a1b7b015.chunk.css",
-    "static/js/main.9b85cae6.chunk.js"
+    "static/js/main.9d2f4996.chunk.js"
   ]
 }
