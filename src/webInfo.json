@@ -84,57 +84,57 @@
         "items" :[
         {
             "id" : 1,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
-            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "category" : "Science",
-            "git_url" :"https://github.com/satyamrastogi/profile"
+            "title" : "React Unbeatable Tic Tac Toe",
+            "image" : "tic-tac-toe.gif",
+            "intro": "Project use \n HTML,CSS\nLanguage: Javascript\nFramework : React\nConcepts: Game BOT",
+            "content" : "",
+            "category" : "javaScript",
+            "git_url" :"https://github.com/satyamrastogi/tic-tac-toe"
         },
         {
             "id" : 2,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
-            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "category" : "Science",
+            "title" : "React Profile",
+            "image" : "profile.png",
+            "intro":"Project use \n HTML,CSS,materialUI \nLanguage: Javascript\nFramework : React",
+            "content" : "",
+            "category" : "javaScript",
             "git_url" :"https://github.com/satyamrastogi/profile"
         },
         {
             "id" : 3,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
-            "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "category" : "maths",
-            "git_url" :"https://github.com/satyamrastogi/profile"
+            "title" : "React Todo",
+            "image" : "todolist.png",
+            "intro":"Project use \n HTML,CSS,materialUI \nLanguage: Javascript\nFramework : React",
+            "content" : "",
+            "category" : "javaScript",
+            "git_url" :"https://github.com/satyamrastogi/react-todo"
         },
         {
             "id" : 4,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
+            "title" : "Captcha detection",
+            "image" : "captcha_identifier.gif",
+            "intro":"Project use Image classification of letter 0-9 A-z in captcha image \n project uses ",
             "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "category" : "maths",
-            "git_url" :"https://github.com/satyamrastogi/profile"
+            "category" : "Machine learning",
+            "git_url" :"https://github.com/satyamrastogi/artificial-neural-net"
         },
         {
             "id" : 5,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
+            "title" : "Community Detection",
+            "image" : "evverest.png",
+            "intro": "Project use twitter API to get the  tweets and try classify it in different clusture ",
             "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "category" : "Random",
-            "git_url" :"https://github.com/satyamrastogi/profile"
+            "category" : "Machine learning",
+            "git_url" :"https://github.com/satyamrastogi/community-detection"
         },
         {
             "id" : 6,
-            "title" : "orem Ipsum",
-            "image" : "image path",
-            "intro":"this is demo line ",
+            "title" : "Block Chain Land Registry",
+            "image" : "evverest.png",
+            "intro":"Project use \n HTML,CSS,materialUI \nLanguage: Javascript,Solidity\nFramework : handleBars",
             "content" : "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "category" : "Random",
-            "git_url" :"https://github.com/satyamrastogi/profile"
+            "git_url" :"https://github.com/satyamrastogi/Blockchain-land-registery"
         }
     ]
 },

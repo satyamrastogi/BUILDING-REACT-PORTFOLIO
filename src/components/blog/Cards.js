@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import SnackBarButton from '../SnackBarButton';
 
 class Cards extends React.Component {  
-    
+
     copyUrlToCLipBoard = () => {
         var copyText = this.state.button.git_url;
         const el = document.createElement('textarea');
@@ -40,8 +40,9 @@ class Cards extends React.Component {
             <CardMedia
               component="img"
               alt={this.props.item.title}
-              height="280rem"
-              image={require('../../assets/images/devgrub.png')}
+              height="340rem"
+              width= "370rem"
+              image={require(`../../assets/images/${this.props.item.image}`)}
               title={this.props.item.intro}
             />
             <CardContent>

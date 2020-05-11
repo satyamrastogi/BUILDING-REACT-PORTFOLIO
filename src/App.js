@@ -40,7 +40,7 @@ class App extends React.Component {
     const userDetails = read_details();
     return (
       <Router>
-        <Container className="p-1" fluid={true}>
+        <Container fluid={true}>
           <Navbar sticky="top" className="border-bottom" bg="dark" variant="dark" expand="lg">
           <Navbar.Brand><Link style={{color:"#FFFFFF",marginLeft:"5%"}}className="nav-link" to="/home">{this.state.title}</Link></Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
