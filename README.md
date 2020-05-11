@@ -14,7 +14,7 @@ It is website that take all the data which is there from single file and then mo
     * Homepage to show something about you working no
     * Project to show all your projects
     * About to show something about me
-    * contanct me is to let me know you want to work    with me and it will be fun
+    * contanct me is to let me know you want to work    with me and it will be f
 
 ## Tech Stack
 

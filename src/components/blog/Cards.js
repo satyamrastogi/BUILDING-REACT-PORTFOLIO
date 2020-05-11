@@ -41,7 +41,6 @@ class Cards extends React.Component {
               component="img"
               alt={this.props.item.title}
               height="340rem"
-              width= "370rem"
               image={require(`../../assets/images/${this.props.item.image}`)}
               title={this.props.item.intro}
             />
