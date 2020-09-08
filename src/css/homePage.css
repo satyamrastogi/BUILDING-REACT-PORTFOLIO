@@ -1,0 +1,15 @@
+.cropped {
+    width: 30rem; /* width of container */
+    height: 35rem; /* height of container */
+    object-fit: cover;
+}
+
+.imagePosition {
+    margin-left: 5rem;
+}
+
+.textSpacing {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}

@@ -36,7 +36,7 @@ class Cards extends React.Component {
     render(){
     return (
         <Card style={{maxWidth:340,margin:"3%"}}>
-          <CardActionArea>
+          <CardActionArea style={{ textDecoration : "none" }} href={this.props.item.git_url} target="_blank">
             <CardMedia
               component="img"
               alt={this.props.item.title}
